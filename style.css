@@ -9,30 +9,55 @@ body {
   );
   min-height: 100vh;
 }
-#clock-container {
+
+#text-container {
+  margin-top: 100px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
+
+p {
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(245, 237, 218);
+}
+
+#clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
 img {
   height: 300px;
   box-shadow: 0 0 40px 20px #0ff;
   border-radius: 100%;
   animation: glow-pulse 5s linear 0s infinite;
+  cursor: pointer;
 }
-.hand {
+
+.second-hand {
   position: absolute;
   height: 120px;
-  width: 7px;
+  width: 2px;
   border-top: 120px solid black;
 }
 
-.minute {
+.minute-hand {
   position: absolute;
   height: 100px;
-  width: 5px;
-  border-top: 90px solid rgb(71, 71, 71);
+  width: 4px;
+  border-top: 100px solid rgb(71, 71, 71);
+}
+
+.hour-hand {
+  position: absolute;
+  height: 90px;
+  width: 7px;
+  border-top: 80px solid rgb(108, 108, 108);
 }
 
 .hide {
