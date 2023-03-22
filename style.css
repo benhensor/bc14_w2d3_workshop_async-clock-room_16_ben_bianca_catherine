@@ -24,9 +24,17 @@ img {
 .hand {
   position: absolute;
   height: 120px;
-  width: 5px;
+  width: 7px;
   border-top: 120px solid black;
 }
+
+.minute {
+  position: absolute;
+  height: 100px;
+  width: 5px;
+  border-top: 90px solid rgb(71, 71, 71);
+}
+
 .hide {
   display: none;
 }
