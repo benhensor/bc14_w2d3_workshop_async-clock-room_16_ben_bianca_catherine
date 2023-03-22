@@ -10,8 +10,10 @@
 // variable for the hand
 const hand = document.querySelector(".hand");
  // function rotating the hand 6deg
+let degrees = 0;
 function rotateHand() {
-    hand.style.transform = `rotate(6deg)`;
+    degrees+=6;
+    hand.style.transform = `rotate(${degrees}deg)`;
     // console.log('inside function');
 };
 
